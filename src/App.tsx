@@ -850,7 +850,7 @@ function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="mx-auto grid w-full max-w-7xl gap-5 px-5 pt-8 md:grid-cols-4 md:px-8 pb-20">
+      <section className="mx-auto grid w-full max-w-7xl gap-5 px-5 pt-8 sm:grid-cols-2 md:grid-cols-4 md:px-8 pb-20">
         {heroStats.map((stat, idx) => (
           <motion.div
             key={stat.label}
@@ -1964,7 +1964,7 @@ function CtaBand({ compact = false }: { compact?: boolean }) {
 function SiteFooter() {
   return (
     <footer className="border-t border-border bg-card/60 backdrop-blur-md transition-colors duration-500">
-      <div className="mx-auto grid w-full max-w-7xl gap-12 px-5 py-16 md:px-8 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+      <div className="mx-auto grid w-full max-w-7xl gap-12 px-5 py-16 md:px-8 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div className="space-y-6">
           <div className="flex items-center gap-3">
             <img className="h-14 w-auto" src={company.logo} alt={company.name} />

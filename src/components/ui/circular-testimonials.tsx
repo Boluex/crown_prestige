@@ -40,6 +40,11 @@ interface CircularTestimonialsProps {
 }
 
 function calculateGap(width: number) {
+  if (width < 480) return 20;
+  if (width < 640) return 30;
+  if (width < 768) return 40;
+  if (width < 1024) return 50;
+
   const minWidth = 1024;
   const maxWidth = 1456;
   const minGap = 60;
@@ -147,18 +152,18 @@ export const CircularTestimonials = ({
     if (isLeft) {
       return {
         zIndex: 2,
-        opacity: 1,
+        opacity: containerWidth < 640 ? 0.35 : 1,
         pointerEvents: "auto",
-        transform: `translateX(-${gap}px) translateY(-${maxStickUp}px) scale(0.85) rotateY(15deg)`,
+        transform: `translateX(-${gap}px) translateY(-${maxStickUp}px) scale(0.8) rotateY(12deg)`,
         transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
       };
     }
     if (isRight) {
       return {
         zIndex: 2,
-        opacity: 1,
+        opacity: containerWidth < 640 ? 0.35 : 1,
         pointerEvents: "auto",
-        transform: `translateX(${gap}px) translateY(-${maxStickUp}px) scale(0.85) rotateY(-15deg)`,
+        transform: `translateX(${gap}px) translateY(-${maxStickUp}px) scale(0.8) rotateY(-12deg)`,
         transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
       };
     }
@@ -182,13 +187,13 @@ export const CircularTestimonials = ({
     <div className="w-full max-w-[56rem] p-8 mx-auto">
       <div className="grid gap-20 grid-cols-1 md:grid-cols-2">
         {/* Images */}
-        <div className="relative w-full h-96 [perspective:1000px]" ref={imageContainerRef}>
+        <div className="relative w-full h-72 sm:h-96 [perspective:1000px]" ref={imageContainerRef}>
           {testimonials.map((testimonial, index) => (
             <img
               key={testimonial.src}
               src={testimonial.src}
               alt={testimonial.name}
-              className="absolute w-full h-full object-cover rounded-none shadow-[0_10px_30px_rgba(0,0,0,0.2)] border border-border"
+              className="absolute w-[80%] left-[10%] sm:w-full sm:left-0 h-full object-cover rounded-none shadow-[0_10px_30px_rgba(0,0,0,0.2)] border border-border"
               data-index={index}
               style={getImageStyle(index)}
             />
