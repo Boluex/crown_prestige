@@ -1,0 +1,6 @@
+{"sessionId": "blank-page-vite", "runId": "pre-fix", "hypothesisId": "A", "location": "src/main.jsx:8", "msg": "[DEBUG] main bootstrap start", "data": {"hasRoot": true, "pathname": "/"}, "ts": 1781123116576}
+{"sessionId": "blank-page-vite", "runId": "pre-fix", "hypothesisId": "C", "location": "src/main.jsx:62", "msg": "[DEBUG] post render tick", "data": {"rootChildren": 0}, "ts": 1781123116594}
+{"sessionId": "blank-page-vite", "runId": "pre-fix", "hypothesisId": "A", "location": "src/main.jsx:8", "msg": "[DEBUG] main bootstrap start", "data": {"hasRoot": true, "pathname": "/"}, "ts": 1781123548302}
+{"sessionId": "blank-page-vite", "runId": "pre-fix", "hypothesisId": "C", "location": "src/main.jsx:62", "msg": "[DEBUG] post render tick", "data": {"rootChildren": 0}, "ts": 1781123548315}
+{"sessionId": "blank-page-vite", "runId": "pre-fix", "hypothesisId": "A", "location": "src/main.jsx:8", "msg": "[DEBUG] main bootstrap start", "data": {"hasRoot": true, "pathname": "/"}, "ts": 1781123986926}
+{"sessionId": "blank-page-vite", "runId": "pre-fix", "hypothesisId": "C", "location": "src/main.jsx:62", "msg": "[DEBUG] post render tick", "data": {"rootChildren": 0}, "ts": 1781123986942}
